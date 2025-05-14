@@ -4,20 +4,59 @@ import { motion, AnimatePresence } from 'framer-motion';
 const projects = [
   {
     title: 'Travel App (Mobile and Web)',
-    description: `Built a comprehensive travel planning platform for web and mobile that
-    allows users to organize entire trips seamlessly. Integrated modules for itinerary planning, hotel bookings,
-    car rentals, medical emergency info, and local language guide. Implemented secure login, editable day-wise schedules,
-    real-time updates, and downloadable trip summaries (PDF format). Designed responsive and user-friendly interfaces using React.js (web) and React Native (mobile).`,
+    description: `Trav2To is a comprehensive and user-friendly travel application, a testament to my skills as a frontend developer. Designed for both web and mobile access, this project focuses on providing a streamlined and intuitive experience for all travel needs.
+
+    The core of Trav2To is an interactive map interface, allowing users to explore destinations and discover points of interest effortlessly. A robust search functionality complements this, enabling quick access to specific locations, accommodations, dining, and essential travel services.
+
+    Trav2To stands out with its integrated intelligent features:
+
+    AI-Powered Assistance: An AI button offers personalized travel recommendations, answers queries, and enhances trip planning.
+    Seamless Language Translation: Users can instantly switch the application's language for a globally accessible experience.
+    Real-Time Currency Exchange: A built-in tool simplifies financial planning with instant currency conversions.
+    Beyond these, Trav2To offers key travel functionalities: a travel planner, medical and highway assistance, and access to hotel, car booking, and restaurant information.
+
+    As the sole frontend developer, I was responsible for the complete UI/UX design and implementation, including:
+
+    Developing a responsive and intuitive interface for web and mobile.
+    Integrating mapping libraries and location services.
+    Implementing AI, language translation, and currency exchange features using relevant APIs.
+    Building user interfaces for core travel services.
+
+    Key Technologies:
+     Reactjs, JavaScript, Tailwind CSS,HTML and APIs used for mapping, AI, Language translation, and currency conversion.
+    
+     Trav2To showcases my ability to create a feature-rich and user-friendly travel application independently, demonstrating my skills in frontend development, API integration, and UI/UX design for both web and mobile platforms.
+        `,
     techStack: ['React.js', 'React Native', 'HTML', 'CSS', 'JavaScript', 'Authentication'],
     liveLink: 'https://travel-nikithakarnati-nikithas-projects-693e44d1.vercel.app/',
-    githubLink: 'https://github.com/nikithakarnati/Travel',
+    githubLink: 'https://github.com/nikithakarnati/Travel', 
     image: '/Travel.PNG', // Path to your Travel App image in the public folder
   },
   {
     title: 'Quizzie',
-    description: `Implemented UI designs with HTML, CSS, and JavaScript for responsiveness.
-    Developed an interactive quiz platform with secure authentication, real-time analytics, and intuitive quiz management features.
-    Built a responsive dashboard for tracking quizzes, user activity, and instant feedback on quiz attempts.`,
+    description: `Quizzie is a dynamic and engaging frontend application I independently developed to provide a user-friendly platform for creating and potentially interacting with quizzes. This project showcases my ability to build a functional and visually appealing dashboard interface.
+    
+    The central feature of Quizzie is its intuitive dashboard, which provides users with a clear overview of their quiz activity. Key metrics displayed include:
+
+    Quiz Creation Count: Indicating the total number of quizzes the user has created .
+    Question Creation Count: Displaying the total number of questions authored by the user across all quizzes.
+    Total Impressions: Tracking the total number of times the user's quizzes have been viewed or engaged with .
+
+    The dashboard also features a section showcasing 'Trending Quizzes.' This area dynamically displays a list of quizzes, each with a visual indicator  suggesting potential interaction or further options. The creation date for each quiz is also displayed.
+    
+    As the sole frontend developer for Quizzie, I was responsible for the entire user interface and user experience, encompassing:
+
+    Designing and implementing a clean and organized dashboard layout.
+    Developing the visual presentation of key metrics and quiz listings.
+    Creating the navigation sidebar, providing access to 'Dashboard,' 'Analytics,' 'Create Quiz,' and 'Logout' functionalities.
+    Ensuring a responsive design that adapts to different screen sizes.
+
+    Key Technologies Used:
+
+    HTML, CSS, JavaScript, Reactjs.
+
+    Quizzie demonstrates my proficiency in frontend development, including UI/UX design, data visualization (presenting metrics), and the ability to structure and build a functional dashboard interface as a single developer.
+    `,
     techStack: ['HTML', 'CSS', 'React.js'],
     githubLink: 'https://github.com/nikithakarnati/August-Project',
     image: '/Quiz.PNG', // Add path to your Quizzie image here when you have it
@@ -69,7 +108,7 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <div
-              className="h-48 bg-transparent rounded-xl mb-4 flex items-center justify-center text-gray-400 cursor-pointer"
+              className="h-70 bg-transparent rounded-xl mb-4 flex items-center justify-center text-gray-400 cursor-pointer"
               onClick={() => openPreview(project.image)}
             >
               {project.image ? (
