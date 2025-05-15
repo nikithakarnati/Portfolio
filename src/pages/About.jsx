@@ -26,7 +26,6 @@ const About = () => {
         backgroundImage: 'linear-gradient(to bottom right, #4A6BE1, #E14A65)',
       }}
     >
-      {/* Heading */}
       <motion.h2
         variants={fadeIn('up')}
         initial="hidden"
@@ -37,7 +36,6 @@ const About = () => {
         About Me
       </motion.h2>
 
-      {/* Introduction */}
       <motion.div
         variants={fadeIn('up')}
         initial="hidden"
@@ -66,9 +64,7 @@ const About = () => {
         </div>
       </motion.div>
 
-      {/* Education and Experience */}
       <div className="flex flex-col md:flex-row gap-8 mb-14">
-        {/* Education */}
         <motion.div
           variants={fadeIn('up', 0.2)}
           initial="hidden"
@@ -99,7 +95,6 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* Experience */}
         <motion.div
           variants={fadeIn('up', 0.3)}
           initial="hidden"
@@ -136,10 +131,8 @@ const About = () => {
           </div>
         </motion.div>
       </div>
-
-      {/* Courses and Certifications */}
       <div className="flex flex-col md:flex-row gap-8 mb-14">
-        {/* Courses */}
+        
         <motion.div
           variants={fadeIn('up', 0.4)}
           initial="hidden"
@@ -160,7 +153,6 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* Certification */}
         <motion.div
           variants={fadeIn('up', 0.5)}
           initial="hidden"
@@ -185,7 +177,6 @@ const About = () => {
         </motion.div>
       </div>
 
-      {/* Tech Stack */}
       <motion.div
         variants={fadeIn('up', 0.6)}
         initial="hidden"
@@ -211,7 +202,6 @@ const About = () => {
         </div>
       </motion.div>
 
-      {/* Resume Buttons */}
       <motion.div
         variants={fadeIn('up', 0.7)}
         initial="hidden"
@@ -239,7 +229,6 @@ const About = () => {
         </motion.button>
       </motion.div>
 
-      {/* Modal */}
       <AnimatePresence>
         {showModal && (
           <motion.div

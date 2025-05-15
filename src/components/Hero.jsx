@@ -25,7 +25,7 @@ const Hero = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="min-h-screen flex flex-col md:flex-row items-center justify-between text-gray-800 py-10 px-8 md:px-20"
+      className="fixed top-0 left-0 w-full h-screen flex flex-col md:flex-row items-center justify-between text-gray-800 px-8 md:px-20"
       style={{
         backgroundImage: 'linear-gradient(to bottom right, #4A6BE1, #E14A65)',
       }}
@@ -33,7 +33,7 @@ const Hero = () => {
       {/* Left Text */}
       <motion.div
         variants={fadeIn("right", 0.2)}
-        className="space-y-6 mt-10 md:mt-0"
+        className="space-y-4 md:mt-0"
       >
         <h1 className="text-4xl md:text-5xl font-bold">
           Hi, This is <span className="text-purple-400">Nikitha Karnati</span>
@@ -72,15 +72,16 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      {/* Right Image */}
       <motion.div
         variants={fadeIn("left", 0.4)}
-        className="w-full md:w-1/2 mt-10 md:mt-0"
+        className="w-full md:w-1/2 md:mt-0 flex justify-center"
+        style={{ maxHeight: 'calc(100vh - 60px)' }} 
       >
         <motion.img
-          src="/pic.svg"
+          src="/image.png"
           alt="developer"
-          className="w-[500px] h-[500px]"
+          className="object-contain max-h-full"
+          style={{ maxWidth: '100%' }} 
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.3 }}
         />

@@ -36,7 +36,6 @@ const Contact = () => {
       </motion.h2>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
-        {/* Phone */}
         <motion.div
           variants={fadeIn('up', 0.1)}
           initial="hidden"
@@ -54,7 +53,6 @@ const Contact = () => {
           </a>
         </motion.div>
 
-        {/* Email */}
         <motion.div
           variants={fadeIn('up', 0.2)}
           initial="hidden"
@@ -72,7 +70,6 @@ const Contact = () => {
           </a>
         </motion.div>
 
-        {/* LinkedIn */}
         <motion.div
           variants={fadeIn('up', 0.3)}
           initial="hidden"

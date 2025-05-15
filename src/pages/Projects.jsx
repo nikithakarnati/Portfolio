@@ -30,7 +30,7 @@ const projects = [
     techStack: ['React.js', 'React Native', 'HTML', 'CSS', 'JavaScript', 'Authentication'],
     liveLink: 'https://travel-nikithakarnati-nikithas-projects-693e44d1.vercel.app/',
     githubLink: 'https://github.com/nikithakarnati/Travel', 
-    image: '/Travel.PNG', // Path to your Travel App image in the public folder
+    image: '/Travel.PNG', 
   },
   {
     title: 'Quizzie',
@@ -59,7 +59,7 @@ const projects = [
     `,
     techStack: ['HTML', 'CSS', 'React.js'],
     githubLink: 'https://github.com/nikithakarnati/August-Project',
-    image: '/Quiz.PNG', // Add path to your Quizzie image here when you have it
+    image: '/Quiz.PNG', 
   },
 ];
 
@@ -102,7 +102,7 @@ const Projects = () => {
           <motion.div
             key={index}
             className="bg-transparent rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-            variants={fadeInCard(index * 0.2)} // Apply fade-in to each card
+            variants={fadeInCard(index * 0.2)} 
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
@@ -163,7 +163,6 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Image Preview Modal */}
       <AnimatePresence>
         {previewImage && (
           <motion.div
@@ -180,7 +179,7 @@ const Projects = () => {
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
-              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking on the image
+              onClick={(e) => e.stopPropagation()}
             />
             <motion.button
               onClick={closePreview}
