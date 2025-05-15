@@ -30,7 +30,7 @@ const Hero = () => {
         backgroundImage: 'linear-gradient(to bottom right, #4A6BE1, #E14A65)',
       }}
     >
-      {/* Left Text */}
+      
       <motion.div
         variants={fadeIn("right", 0.2)}
         className="space-y-4 md:mt-0"
